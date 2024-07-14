@@ -48,10 +48,6 @@ typedef struct {
   float*       send_right;
   float*       return_left;
   float*       return_right;
-  jack_port_t* jack_send_left;
-  jack_port_t* jack_send_right;
-  jack_port_t* jack_return_left;
-  jack_port_t* jack_return_right;
 } JackInsert;
 
 static void connect_jack_ports(int disconnect) {
