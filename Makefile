@@ -17,9 +17,9 @@ $(TARGET): $(SRC)
 	$(CC) $(CFLAGS) $(SRC) -o $(BINDIR)/$@
 
 install: $(TARGET)
-	install -d $(DESTDIR)$(PREFIX)$(LIBDIR)jloop.lv2
-	install -m 644 *.so  $(DESTDIR)$(PREFIX)$(LIBDIR)jloop.lv2/
-	install -m 644 *.ttl $(DESTDIR)$(PREFIX)$(LIBDIR)jloop.lv2/
+	install -d $(DESTDIR)$(PREFIX)$(LIBDIR)jackinsert.lv2
+	install -m 644 *.so  $(DESTDIR)$(PREFIX)$(LIBDIR)jackinsert.lv2/
+	install -m 644 *.ttl $(DESTDIR)$(PREFIX)$(LIBDIR)jackinsert.lv2/
 
 clean:
 	rm -rf $(OBJDIR) $(BINDIR)/$(TARGET)
