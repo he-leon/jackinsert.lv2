@@ -3,6 +3,7 @@
 `JACKInsert` is an LV2 plugin designed to integrate a JACK application into an LV2 host. 
 This allows the routing of audio signals through a JACK application that isn't available as an LV2 plugin, for example SooperLooper
 The plugin is particularly suited for use with the MOD system developed by MOD Audio.
+It currently is WIP.
 
 ## Features
 
