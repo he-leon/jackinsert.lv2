@@ -226,6 +226,7 @@ static void run(LV2_Handle instance, uint32_t n_samples) {
   // This will lead to some XRUNs :/
   if (!slconnected) {
     connect_jack_ports(0);
+    slconnected = 1;
   }
 
   // Copy input to SEND ports
