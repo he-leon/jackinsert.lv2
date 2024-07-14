@@ -1,0 +1,48 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+
+<https://github.com/he-leon/jackinsert> a lv2:Plugin , doap:Project ;
+    lv2:binary <jackinsert.so> ;
+    doap:name "JACKInsert" ;
+    doap:license <http://opensource.org/licenses/isc> ;
+    lv2:port [
+        a lv2:AudioPort , lv2:InputPort ;
+        lv2:index 0 ;
+        lv2:symbol "in_left" ;
+        lv2:name "Input Left"
+    ] , [
+        a lv2:AudioPort , lv2:InputPort ;
+        lv2:index 1 ;
+        lv2:symbol "in_right" ;
+        lv2:name "Input Right"
+    ] , [
+        a lv2:AudioPort , lv2:OutputPort ;
+        lv2:index 2 ;
+        lv2:symbol "out_left" ;
+        lv2:name "Output Left"
+    ] , [
+        a lv2:AudioPort , lv2:OutputPort ;
+        lv2:index 3 ;
+        lv2:symbol "out_right" ;
+        lv2:name "Output Right"
+    ] , [
+        a lv2:AudioPort , lv2:OutputPort ;
+        lv2:index 4 ;
+        lv2:symbol "send_left" ;
+        lv2:name "Send Left"
+    ] , [
+        a lv2:AudioPort , lv2:OutputPort ;
+        lv2:index 5 ;
+        lv2:symbol "send_right" ;
+        lv2:name "Send Right"
+    ] , [
+        a lv2:AudioPort , lv2:InputPort ;
+        lv2:index 6 ;
+        lv2:symbol "return_left" ;
+        lv2:name "Return Left"
+    ] , [
+        a lv2:AudioPort , lv2:InputPort ;
+        lv2:index 7 ;
+        lv2:symbol "return_right" ;
+        lv2:name "Return Right"
+    ] .

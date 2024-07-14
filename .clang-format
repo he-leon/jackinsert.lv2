@@ -1,0 +1,19 @@
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignEscapedNewlinesLeft: true
+BasedOnStyle: Google
+ColumnLimit: 100
+StatementMacros:
+  - LV2_DEPRECATED
+  - LV2_DISABLE_DEPRECATION_WARNINGS
+  - LV2_RESTORE_WARNINGS
+  - LV2_SYMBOL_EXPORT
+  - _Pragma
+ForEachMacros:
+  - LV2_ATOM_OBJECT_BODY_FOREACH
+  - LV2_ATOM_OBJECT_FOREACH
+  - LV2_ATOM_SEQUENCE_BODY_FOREACH
+  - LV2_ATOM_SEQUENCE_FOREACH
+  - LV2_ATOM_TUPLE_BODY_FOREACH
+  - LV2_ATOM_TUPLE_FOREACH
+...
