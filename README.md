@@ -18,8 +18,8 @@ It currently is WIP.
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/he-leon/jackinsert.git
-    cd jackinsert
+    git clone https://github.com/he-leon/jackinsert.lv2.git
+    cd jackinsert.lv2
     ```
 
 2. **Build the plugin:**
