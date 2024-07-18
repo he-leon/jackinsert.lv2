@@ -75,7 +75,9 @@ static void connect_jack_ports(int disconnect) {
   const char** our_ports;
   // Connect/disconnect to Sooperlooper input ports
   ports     = jack_get_ports(client, "sooperlooper:common_in_", NULL, JackPortIsInput);
-  our_ports = jack_get_ports(client, "JACKInsert:send_", NULL, JackPortIsOutput);
+  our_ports = jack_get_ports(client, ".*jinsert_send_", NULL, JackPortIsOutput);
+  fprintf(stderr, "Sooperlooper ports: %s %s\n", ports[0], ports[1]);
+  fprintf(stderr, "Our ports: %s\n", our_ports);
   int ret;
   if (ports && our_ports) {
     if (disconnect) {
@@ -124,7 +126,7 @@ static void connect_jack_ports(int disconnect) {
 
   // Connect/Disconnect to Sooperlooper output ports
   ports     = jack_get_ports(client, "sooperlooper:common_out_", NULL, JackPortIsOutput);
-  our_ports = jack_get_ports(client, "JACKInsert:return_", NULL, JackPortIsInput);
+  our_ports = jack_get_ports(client, ".*:jinsert_return_", NULL, JackPortIsInput);
   if (ports && our_ports) {
     if (disconnect) {
       fprintf(stderr, "Disconnecting from Sooperlooper output ports\n");
